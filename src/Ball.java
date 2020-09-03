@@ -1,6 +1,5 @@
 public class Ball
-{
-    public static void main {String[] arg}
+{ public static void main {String[] arg}
 
     {
         Ball a = new Ball();

@@ -1,19 +1,44 @@
 public class Ball
 {
-    public static void main {String[] arg}
-
+    private String color;
+    private String type;
+    private int Radius;
+    public Ball(String c, String t, int R)
     {
-        Ball a = new Ball();
-        a.color = "Blue";
-        a.radius = 5.47f;
-        a.type = "Football";
-        Ball b = new Ball();
-        b.color = "Red";
-        b.radius = 6.1f
-        b.type="Basketball";
-        System.out.println(b);
-        System.out.println();
-        System.out.println(a);
+        color = c;
+        type = t;
+        Radius = R;
+    }
 
+    public Ball(String c, String t)
+    {
+        color = c;
+        type = t;
+        Radius = 0;
+    }
+
+    public void setRadius(int Radius)
+    {
+        this.Radius = Radius;
+    }
+    public void SetType(String type)
+    {
+        this.type = type;
+    }
+    public void setName(String color)
+    {
+        this.color = color;
+    }
+    public String getName(String name)
+    {
+        return name;
+    }
+    public int getRadius()
+    {
+        return Radius;
+    }
+    public String toString()
+    {
+        return "color:"+this.color+" Radius:"+this.Radius +" type:"+this.type;
     }
 }
